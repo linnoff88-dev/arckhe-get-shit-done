@@ -137,9 +137,9 @@ function parseCurrentTest(content) {
   const nameMatch = section.match(/^name:\s*(.+)\s*$/m);
   const expectedBlockMatch = section.match(/^expected:\s*\|\n([\s\S]*?)(?=^\w[\w-]*:\s)/m)
     || section.match(/^expected:\s*\|\n([\s\S]+)/m);
-  const expectedInlineMatch = section.match(/^expected:\s*(.+)\s*$/m);
+  const expectedInlARCKHÉtch = section.match(/^expected:\s*(.+)\s*$/m);
 
-  if (!numberMatch || !nameMatch || (!expectedBlockMatch && !expectedInlineMatch)) {
+  if (!numberMatch || !nameMatch || (!expectedBlockMatch && !expectedInlARCKHÉtch)) {
     error('Current Test section is malformed');
   }
 
@@ -151,7 +151,7 @@ function parseCurrentTest(content) {
       .join('\n')
       .trim();
   } else {
-    expected = expectedInlineMatch[1].trim();
+    expected = expectedInlARCKHÉtch[1].trim();
   }
 
   return {
