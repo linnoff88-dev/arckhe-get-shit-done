@@ -1,4 +1,4 @@
-# Plano: Materializar Configuração no `new-project` (pt-BR)
+# Plano: Materializar Configuraçêo no `new-project` (pt-BR)
 
 Data original: 2026-03-23  
 Fonte canônica: `docs/superpowers/plans/2026-03-18-materialize-new-project-config.md`
@@ -7,54 +7,54 @@ Fonte canônica: `docs/superpowers/plans/2026-03-18-materialize-new-project-conf
 
 ## Contexto
 
-Este plano formaliza a materialização explícita da configuração do projeto durante `/gsd:new-project`, garantindo que escolhas feitas na inicialização sejam persistidas de forma determinística em `.planning/config.json`.
+Este plano formaliza a materializaçêo explícita da configuraçêo do projeto durante `/gsd:new-project`, garantindo que escolhas feitas na inicializaçêo sejam persistidas de forma determinística em `.planning/config.json`.
 
 ## Objetivos
 
 - garantir persistência imediata de decisões de setup
-- reduzir divergência entre estado interativo e arquivo de configuração
-- facilitar retomada de sessão e reprodutibilidade
+- reduzir divergência entre estado interativo e arquivo de configuraçêo
+- facilitar retomada de sessêo e reprodutibilidade
 
 ## Escopo
 
 Inclui:
 
-- mapeamento de respostas de setup para chaves de configuração
+- mapeamento de respostas de setup para chaves de configuraçêo
 - escrita idempotente de `.planning/config.json`
-- validação mínima de schema antes de persistir
+- validaçêo mínima de schema antes de persistir
 
-Não inclui:
+Nêo inclui:
 
 - redesenho completo do schema
-- migração profunda de versões legadas
+- migraçêo profunda de versões legadas
 
-## Estratégia de implementação
+## Estratégia de implementaçêo
 
 1. Capturar decisões de setup em estrutura intermediária
 2. Normalizar valores (tipos/enum/padrões)
 3. Aplicar merge controlado no config existente
 4. Persistir arquivo final e registrar resumo no estado
 
-## Critérios de aceitação
+## Critérios de aceitaçêo
 
 - após `/gsd:new-project`, `config.json` reflete as escolhas feitas
-- rerun não duplica nem corrompe campos
+- rerun nêo duplica nem corrompe campos
 - comandos subsequentes observam os valores persistidos
 
-## Riscos e mitigação
+## Riscos e mitigaçêo
 
-- **Risco:** configuração parcial em caso de falha no meio  
-  **Mitigação:** escrita atômica (arquivo temporário + replace)
+- **Risco:** configuraçêo parcial em caso de falha no meio  
+  **Mitigaçêo:** escrita atômica (arquivo temporário + replace)
 - **Risco:** inconsistência com defaults implícitos  
-  **Mitigação:** normalização centralizada com fallback explícito
+  **Mitigaçêo:** normalizaçêo centralizada com fallback explícito
 
-## Verificação
+## Verificaçêo
 
-- teste de inicialização limpa
-- teste de reexecução com config pré-existente
+- teste de inicializaçêo limpa
+- teste de reexecuçêo com config pré-existente
 - teste de compatibilidade com comandos dependentes de config
 
 ---
 
 > [!NOTE]
-> Esta versão em Português é uma tradução operacional do plano para consulta rápida. O documento original permanece como referência técnica canônica.
+> Esta versêo em Português é uma traduçêo operacional do plano para consulta rápida. O documento original permanece como referência técnica canônica.

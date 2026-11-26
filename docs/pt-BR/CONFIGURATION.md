@@ -1,7 +1,7 @@
-# Referência de Configuração do GSD
+# Referência de Configuraçêo do GSD
 
 Configurações do projeto ficam em `.planning/config.json`.  
-Esta versão resume os parâmetros principais em Português. Para schema completo, veja [inglês](../CONFIGURATION.md).
+Esta versêo resume os parâmetros principais em Português. Para schema completo, veja [inglês](../CONFIGURATION.md).
 
 ---
 
@@ -32,7 +32,7 @@ Esta versão resume os parâmetros principais em Português. Para schema complet
 
 ## Configurações principais
 
-| Chave | Opções | Padrão | Descrição |
+| Chave | Opções | Padrêo | Descriçêo |
 |------|--------|--------|-----------|
 | `mode` | `interactive`, `yolo` | `interactive` | `yolo` autoaprova; `interactive` confirma cada etapa |
 | `granularity` | `coarse`, `standard`, `fine` | `standard` | Granularidade de fases/planos |
@@ -40,30 +40,30 @@ Esta versão resume os parâmetros principais em Português. Para schema complet
 
 ## Planning
 
-| Chave | Padrão | Descrição |
+| Chave | Padrêo | Descriçêo |
 |------|--------|-----------|
 | `planning.commit_docs` | `true` | Comitar `.planning/` no git |
 | `planning.search_gitignored` | `false` | Incluir arquivos ignorados em buscas amplas |
 
 ## Workflow toggles
 
-| Chave | Padrão | Descrição |
+| Chave | Padrêo | Descriçêo |
 |------|--------|-----------|
 | `workflow.research` | `true` | Pesquisa antes de planejar |
-| `workflow.plan_check` | `true` | Loop de verificação de plano |
-| `workflow.verifier` | `true` | Verificação pós-execução |
-| `workflow.nyquist_validation` | `true` | Camada de validação automatizada por requisito |
+| `workflow.plan_check` | `true` | Loop de verificaçêo de plano |
+| `workflow.verifier` | `true` | Verificaçêo pós-execuçêo |
+| `workflow.nyquist_validation` | `true` | Camada de validaçêo automatizada por requisito |
 | `workflow.ui_phase` | `true` | Contrato de UI para fases frontend |
 | `workflow.ui_safety_gate` | `true` | Gate de segurança para registry UI |
-| `workflow.research_before_questions` | `false` | Pesquisa antes da discussão |
-| `workflow.discuss_mode` | `standard` | Discussão aberta; use `assumptions` para modo baseado em código |
+| `workflow.research_before_questions` | `false` | Pesquisa antes da discussêo |
+| `workflow.discuss_mode` | `standard` | Discussêo aberta; use `assumptions` para modo baseado em código |
 | `workflow.skip_discuss` | `false` | Pula discuss-phase no modo autônomo |
 
 ## Git branching
 
-| Chave | Opções | Padrão | Descrição |
+| Chave | Opções | Padrêo | Descriçêo |
 |------|--------|--------|-----------|
-| `git.branching_strategy` | `none`, `phase`, `milestone` | `none` | Estratégia de criação de branches |
+| `git.branching_strategy` | `none`, `phase`, `milestone` | `none` | Estratégia de criaçêo de branches |
 | `git.phase_branch_template` | string | `gsd/phase-{phase}-{slug}` | Nome para branch por fase |
 | `git.milestone_branch_template` | string | `gsd/{milestone}-{slug}` | Nome para branch de milestone |
 | `git.quick_branch_template` | string ou `null` | `null` | Branch opcional para `/gsd:quick` |
@@ -73,9 +73,9 @@ Esta versão resume os parâmetros principais em Português. Para schema complet
 | Perfil | Objetivo |
 |--------|----------|
 | `quality` | Melhor qualidade, maior custo |
-| `balanced` | Equilíbrio (padrão recomendado) |
+| `balanced` | Equilíbrio (padrêo recomendado) |
 | `budget` | Menor custo |
-| `inherit` | Herdar modelo da sessão/runtime |
+| `inherit` | Herdar modelo da sessêo/runtime |
 
 Troca rápida:
 

@@ -1,9 +1,9 @@
-# Discuss Mode (Modo de Discussão)
+# Discuss Mode (Modo de Discussêo)
 
 O GSD oferece dois estilos para `/gsd:discuss-phase`:
 
 - **`standard`**: entrevista aberta para levantar preferências
-- **`assumptions`**: análise do código primeiro, seguida de confirmação/correção de suposições
+- **`assumptions`**: análise do código primeiro, seguida de confirmaçêo/correçêo de suposições
 
 Para referência completa, veja [workflow-discuss-mode.md em inglês](../workflow-discuss-mode.md).
 
@@ -13,7 +13,7 @@ Para referência completa, veja [workflow-discuss-mode.md em inglês](../workflo
 
 Use quando:
 
-- o projeto ainda não tem padrões claros
+- o projeto ainda nêo tem padrões claros
 - você quer explorar alternativas livremente
 - há decisões de produto/UX em aberto
 
@@ -25,8 +25,8 @@ Trade-off: pode consumir mais tempo de perguntas.
 Use quando:
 
 - o código já tem convenções estáveis
-- você quer reduzir fricção no intake
-- o time prefere revisão de propostas em vez de entrevista aberta
+- você quer reduzir fricçêo no intake
+- o time prefere revisêo de propostas em vez de entrevista aberta
 
 Vantagem: velocidade e consistência com o código existente.  
 Trade-off: depende da qualidade do mapeamento de contexto.

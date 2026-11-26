@@ -5,15 +5,15 @@ Para a listagem completa com regras detalhadas, consulte [AGENTS.md em inglês](
 
 ---
 
-## Visão geral
+## Visêo geral
 
 O GSD usa um **orquestrador leve** para coordenar subagentes especializados por etapa:
 
 - pesquisa
 - planejamento
-- execução
-- validação
-- depuração
+- execuçêo
+- validaçêo
+- depuraçêo
 
 Cada agente tem responsabilidade clara, entradas/saídas definidas e contexto de trabalho limitado.
 
@@ -29,15 +29,15 @@ Cada agente tem responsabilidade clara, entradas/saídas definidas e contexto de
 - **Planner**: transforma requisitos em planos atômicos
 - **Plan checker**: valida consistência, escopo, verificabilidade e dependências
 
-### Execução
+### Execuçêo
 
 - **Executor**: implementa tarefas do plano com contexto fresco
 - **Integration checker**: verifica se as partes integram corretamente
 
-### Verificação
+### Verificaçêo
 
 - **Verifier**: compara entrega contra objetivos da fase
-- **UAT support**: auxilia no processo de validação manual guiada
+- **UAT support**: auxilia no processo de validaçêo manual guiada
 
 ### Diagnóstico
 
@@ -46,19 +46,19 @@ Cada agente tem responsabilidade clara, entradas/saídas definidas e contexto de
 
 ## Padrões operacionais
 
-- **Contexto isolado por tarefa**: evita poluição acumulada
+- **Contexto isolado por tarefa**: evita poluiçêo acumulada
 - **Commits atômicos**: um commit por unidade de trabalho
-- **Execução em ondas**: paralelo quando possível, sequencial quando necessário
-- **Loop de revisão**: planejamento e validação iteram até critérios mínimos
+- **Execuçêo em ondas**: paralelo quando possível, sequencial quando necessário
+- **Loop de revisêo**: planejamento e validaçêo iteram até critérios mínimos
 
 ## Boas práticas
 
 - Prefira tarefas pequenas e verificáveis
-- Trave decisões de implementação no `CONTEXT.md`
-- Use `assumptions mode` quando já houver padrão consolidado no código
+- Trave decisões de implementaçêo no `CONTEXT.md`
+- Use `assumptions mode` quando já houver padrêo consolidado no código
 - Ajuste perfil de modelo conforme custo x qualidade
 
 ---
 
 > [!NOTE]
-> Esta versão em Português é uma referência operacional. Se você estiver contribuindo com o núcleo do framework ou alterando comportamento de agentes, consulte sempre o documento em inglês para detalhes normativos.
+> Esta versêo em Português é uma referência operacional. Se você estiver contribuindo com o núcleo do framework ou alterando comportamento de agentes, consulte sempre o documento em inglês para detalhes normativos.

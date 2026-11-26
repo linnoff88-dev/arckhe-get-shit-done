@@ -4,9 +4,9 @@
 
 [English](README.md) · **Português** · [简体中文](README.zh-CN.md) · [日本語](README.ja-JP.md)
 
-**Um sistema leve e poderoso de meta-prompting, engenharia de contexto e desenvolvimento orientado a especificação para Claude Code, OpenCode, Gemini CLI, Kilo, Codex, Copilot, Cursor, Windsurf, Antigravity e Augment.**
+**Um sistema leve e poderoso de meta-prompting, engenharia de contexto e desenvolvimento orientado a especificaçêo para Claude Code, OpenCode, Gemini CLI, Kilo, Codex, Copilot, Cursor, Windsurf, Antigravity e Augment.**
 
-**Resolve context rot — a degradação de qualidade que acontece conforme o Claude enche a janela de contexto.**
+**Resolve context rot — a degradaçêo de qualidade que acontece conforme o Claude enche a janela de contexto.**
 
 [![npm version](https://img.shields.io/npm/v/get-shit-done-cc?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/get-shit-done-cc)
 [![npm downloads](https://img.shields.io/npm/dm/get-shit-done-cc?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/get-shit-done-cc)
@@ -31,11 +31,11 @@ npx get-shit-done-cc@latest
 
 <br>
 
-*"Se você sabe claramente o que quer, isso VAI construir para você. Sem enrolação."*
+*"Se você sabe claramente o que quer, isso VAI construir para você. Sem enrolaçêo."*
 
 *"Eu já usei SpecKit, OpenSpec e Taskmaster — este me deu os melhores resultados."*
 
-*"De longe a adição mais poderosa ao meu Claude Code. Nada superengenheirado. Simplesmente faz o trabalho."*
+*"De longe a adiçêo mais poderosa ao meu Claude Code. Nada superengenheirado. Simplesmente faz o trabalho."*
 
 <br>
 
@@ -49,11 +49,11 @@ npx get-shit-done-cc@latest
 
 ## Por que eu criei isso
 
-Sou desenvolvedor solo. Eu não escrevo código — o Claude Code escreve.
+Sou desenvolvedor solo. Eu nêo escrevo código — o Claude Code escreve.
 
-Existem outras ferramentas de desenvolvimento orientado por especificação. BMAD, Speckit... Mas quase todas parecem mais complexas do que o necessário (cerimônias de sprint, story points, sync com stakeholders, retrospectivas, fluxos Jira) ou não entendem de verdade o panorama do que você está construindo. Eu não sou uma empresa de software com 50 pessoas. Não quero teatro corporativo. Só quero construir coisas boas que funcionem.
+Existem outras ferramentas de desenvolvimento orientado por especificaçêo. BMAD, Speckit... Mas quase todas parecem mais complexas do que o necessário (cerimônias de sprint, story points, sync com stakeholders, retrospectivas, fluxos Jira) ou nêo entendem de verdade o panorama do que você está construindo. Eu nêo sou uma empresa de software com 50 pessoas. Nêo quero teatro corporativo. Só quero construir coisas boas que funcionem.
 
-Então eu criei o GSD. A complexidade fica no sistema, não no seu fluxo. Por trás: engenharia de contexto, formatação XML de prompts, orquestração de subagentes, gerenciamento de estado. O que você vê: alguns comandos que simplesmente funcionam.
+Entêo eu criei o GSD. A complexidade fica no sistema, nêo no seu fluxo. Por trás: engenharia de contexto, formataçêo XML de prompts, orquestraçêo de subagentes, gerenciamento de estado. O que você vê: alguns comandos que simplesmente funcionam.
 
 O sistema dá ao Claude tudo que ele precisa para fazer o trabalho *e* validar o resultado. Eu confio no fluxo. Ele entrega.
 
@@ -71,7 +71,7 @@ O GSD corrige isso. É a camada de engenharia de contexto que torna o Claude Cod
 
 Para quem quer descrever o que precisa e receber isso construído do jeito certo — sem fingir que está rodando uma engenharia de 50 pessoas.
 
-Quality gates embutidos capturam problemas reais: detecção de schema drift sinaliza mudanças ORM sem migrations, segurança ancora verificação a modelos de ameaça, e detecção de redução de escopo impede o planner de descartar requisitos silenciosamente.
+Quality gates embutidos capturam problemas reais: detecçêo de schema drift sinaliza mudanças ORM sem migrations, segurança ancora verificaçêo a modelos de ameaça, e detecçêo de reduçêo de escopo impede o planner de descartar requisitos silenciosamente.
 
 ---
 
@@ -94,7 +94,7 @@ Verifique com:
 - Antigravity: `/gsd:help`
 
 > [!NOTE]
-> A instalação do Codex usa skills (`skills/gsd-*/SKILL.md`) em vez de prompts customizados.
+> A instalaçêo do Codex usa skills (`skills/gsd-*/SKILL.md`) em vez de prompts customizados.
 
 ### Mantendo atualizado
 
@@ -103,7 +103,7 @@ npx get-shit-done-cc@latest
 ```
 
 <details>
-<summary><strong>Instalação não interativa (Docker, CI, Scripts)</strong></summary>
+<summary><strong>Instalaçêo nêo interativa (Docker, CI, Scripts)</strong></summary>
 
 ```bash
 # Claude Code
@@ -180,7 +180,7 @@ O sistema:
 /gsd:discuss-phase 1
 ```
 
-Captura suas preferências de implementação antes do planejamento.
+Captura suas preferências de implementaçêo antes do planejamento.
 
 **Cria:** `{phase_num}-CONTEXT.md`
 
@@ -215,9 +215,9 @@ Captura suas preferências de implementação antes do planejamento.
 /gsd:verify-work 1
 ```
 
-Validação manual orientada para confirmar que a feature realmente funciona como esperado.
+Validaçêo manual orientada para confirmar que a feature realmente funciona como esperado.
 
-**Cria:** `{phase_num}-UAT.md` e planos de correção se necessário
+**Cria:** `{phase_num}-UAT.md` e planos de correçêo se necessário
 
 ### 6. Repetir -> Entregar -> Completar
 
@@ -253,10 +253,10 @@ Para tarefas ad-hoc sem ciclo completo de planejamento.
 
 | Arquivo | Papel |
 |---------|-------|
-| `PROJECT.md` | Visão do projeto |
+| `PROJECT.md` | Visêo do projeto |
 | `research/` | Conhecimento do ecossistema |
 | `REQUIREMENTS.md` | Escopo v1/v2 |
-| `ROADMAP.md` | Direção e progresso |
+| `ROADMAP.md` | Direçêo e progresso |
 | `STATE.md` | Memória entre sessões |
 | `PLAN.md` | Tarefa atômica com XML |
 | `SUMMARY.md` | O que mudou |
@@ -280,9 +280,9 @@ Para tarefas ad-hoc sem ciclo completo de planejamento.
 </task>
 ```
 
-### Orquestração multiagente
+### Orquestraçêo multiagente
 
-Um orquestrador leve chama agentes especializados para pesquisa, planejamento, execução e verificação.
+Um orquestrador leve chama agentes especializados para pesquisa, planejamento, execuçêo e verificaçêo.
 
 ### Commits atômicos
 
@@ -298,7 +298,7 @@ Cada tarefa gera commit próprio, facilitando `git bisect`, rollback e rastreabi
 |---------|-----------|
 | `/gsd:new-project [--auto]` | Inicializa projeto completo |
 | `/gsd:discuss-phase [N] [--auto] [--analyze] [--chain]` | Captura decisões antes do plano (`--chain` encadeia automaticamente em plan+execute) |
-| `/gsd:plan-phase [N] [--auto] [--reviews]` | Pesquisa + plano + validação |
+| `/gsd:plan-phase [N] [--auto] [--reviews]` | Pesquisa + plano + validaçêo |
 | `/gsd:execute-phase <N>` | Executa planos em ondas paralelas |
 | `/gsd:verify-work [N]` | UAT manual |
 | `/gsd:ship [N] [--draft]` | Cria PR da fase validada |
@@ -315,28 +315,28 @@ Cada tarefa gera commit próprio, facilitando `git bisect`, rollback e rastreabi
 | `/gsd:pr-branch` | Cria branch limpa para PR |
 | `/gsd:settings` | Configura perfis e agentes |
 | `/gsd:set-profile <profile>` | Troca perfil (quality/balanced/budget/inherit) |
-| `/gsd:quick [--full] [--discuss] [--research]` | Execução rápida com garantias do GSD (`--full` ativa todas as etapas, `--validate` ativa apenas verificação) |
+| `/gsd:quick [--full] [--discuss] [--research]` | Execuçêo rápida com garantias do GSD (`--full` ativa todas as etapas, `--validate` ativa apenas verificaçêo) |
 | `/gsd:health [--repair]` | Verifica e repara `.planning/` |
 
 > Para a lista completa de comandos e opções, use `/gsd:help`.
 
 ---
 
-## Configuração
+## Configuraçêo
 
 As configurações do projeto ficam em `.planning/config.json`.
 Você pode configurar no `/gsd:new-project` ou ajustar depois com `/gsd:settings`.
 
 ### Ajustes principais
 
-| Configuração | Opções | Padrão | Controle |
+| Configuraçêo | Opções | Padrêo | Controle |
 |--------------|--------|--------|----------|
 | `mode` | `yolo`, `interactive` | `interactive` | Autoaprovar vs confirmar etapas |
 | `granularity` | `coarse`, `standard`, `fine` | `standard` | Granularidade de fases/planos |
 
 ### Perfis de modelo
 
-| Perfil | Planejamento | Execução | Verificação |
+| Perfil | Planejamento | Execuçêo | Verificaçêo |
 |--------|--------------|----------|-------------|
 | `quality` | Opus | Opus | Sonnet |
 | `balanced` | Opus | Sonnet | Sonnet |
@@ -355,11 +355,11 @@ Troca rápida:
 ### Endurecimento embutido
 
 O GSD inclui proteções como:
-- prevenção de path traversal
-- detecção de prompt injection
-- validação de argumentos de shell
+- prevençêo de path traversal
+- detecçêo de prompt injection
+- validaçêo de argumentos de shell
 - parsing seguro de JSON
-- scanner de injeção para CI
+- scanner de injeçêo para CI
 
 ### Protegendo arquivos sensíveis
 
@@ -382,18 +382,18 @@ Adicione padrões sensíveis ao deny list do Claude Code:
 
 ---
 
-## Solução de problemas
+## Soluçêo de problemas
 
-**Comandos não apareceram após instalar?**
+**Comandos nêo apareceram após instalar?**
 - Reinicie o runtime
 - Verifique se os arquivos foram instalados no diretório correto
 
-**Comandos não funcionam como esperado?**
+**Comandos nêo funcionam como esperado?**
 - Rode `/gsd:help`
 - Reinstale com `npx get-shit-done-cc@latest`
 
 **Em Docker/container?**
-- Defina `CLAUDE_CONFIG_DIR` antes da instalação:
+- Defina `CLAUDE_CONFIG_DIR` antes da instalaçêo:
 
 ```bash
 CLAUDE_CONFIG_DIR=/home/youruser/.claude npx get-shit-done-cc --global
@@ -427,12 +427,12 @@ npx get-shit-done-cc --antigravity --local --uninstall
 
 ## Community Ports
 
-OpenCode, Gemini CLI, Kilo e Codex agora são suportados nativamente via `npx get-shit-done-cc`.
+OpenCode, Gemini CLI, Kilo e Codex agora sêo suportados nativamente via `npx get-shit-done-cc`.
 
-| Projeto | Plataforma | Descrição |
+| Projeto | Plataforma | Descriçêo |
 |---------|------------|-----------|
-| [gsd-opencode](https://github.com/rokicool/gsd-opencode) | OpenCode | Adaptação original para OpenCode |
-| gsd-gemini (archived) | Gemini CLI | Adaptação original para Gemini por uberfuzzy |
+| [gsd-opencode](https://github.com/rokicool/gsd-opencode) | OpenCode | Adaptaçêo original para OpenCode |
+| gsd-gemini (archived) | Gemini CLI | Adaptaçêo original para Gemini por uberfuzzy |
 
 ---
 

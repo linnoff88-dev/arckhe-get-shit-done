@@ -1,4 +1,4 @@
-# Especificação: Design de Multi-Project Workspaces (pt-BR)
+# Especificaçêo: Design de Multi-Project Workspaces (pt-BR)
 
 Data original: 2026-03-20  
 Fonte canônica: `docs/superpowers/specs/2026-03-20-multi-project-workspaces-design.md`
@@ -15,18 +15,18 @@ Introduzir workspaces multi-projeto com:
 
 - isolamento de `.planning/` por workspace
 - suporte a múltiplos repositórios (worktree/clone)
-- comandos para criação, listagem e remoção
+- comandos para criaçêo, listagem e remoçêo
 
 ## Objetivos de design
 
 - isolamento forte de estado
-- operação simples via comandos (`new/list/remove workspace`)
-- baixo acoplamento com o workflow padrão
+- operaçêo simples via comandos (`new/list/remove workspace`)
+- baixo acoplamento com o workflow padrêo
 - fácil observabilidade do que está ativo
 
 ## Modelo conceitual
 
-- **Workspace**: unidade isolada de execução GSD
+- **Workspace**: unidade isolada de execuçêo GSD
 - **Member repos**: repositórios associados ao workspace
 - **Manifest**: arquivo de metadados com estrutura e status
 
@@ -43,13 +43,13 @@ Introduzir workspaces multi-projeto com:
 - limpeza precisa remover artefatos derivados com segurança
 - comportamento deve ser previsível em ambientes monorepo
 
-## Critérios de aceitação
+## Critérios de aceitaçêo
 
-- workspaces independentes não colidem estado
+- workspaces independentes nêo colidem estado
 - listagem mostra workspace ativo e metadados essenciais
-- remoção limpa artefatos sem afetar repositórios externos
+- remoçêo limpa artefatos sem afetar repositórios externos
 
 ---
 
 > [!NOTE]
-> Esta versão em Português resume a especificação de design para uso prático. O arquivo original em inglês mantém o detalhamento normativo completo.
+> Esta versêo em Português resume a especificaçêo de design para uso prático. O arquivo original em inglês mantém o detalhamento normativo completo.

@@ -11,40 +11,40 @@ As ferramentas CLI permitem que comandos e agentes do GSD executem ações padro
 
 - leitura e escrita de artefatos
 - gerenciamento de fases e roadmap
-- execução e validação de planos
-- integração com git e automação
+- execuçêo e validaçêo de planos
+- integraçêo com git e automaçêo
 
 ## Áreas funcionais
 
 ### Projeto e estado
 
-- inicialização de artefatos (`PROJECT`, `REQUIREMENTS`, `ROADMAP`, `STATE`)
-- atualização de estado por fase
+- inicializaçêo de artefatos (`PROJECT`, `REQUIREMENTS`, `ROADMAP`, `STATE`)
+- atualizaçêo de estado por fase
 - controle de milestones
 
 ### Planejamento
 
-- criação de planos atômicos
-- validação pré-execução
-- consolidação de pesquisa
+- criaçêo de planos atômicos
+- validaçêo pré-execuçêo
+- consolidaçêo de pesquisa
 
-### Execução
+### Execuçêo
 
 - despacho de tarefas por onda
 - persistência de sumários
 - checkpoints de progresso
 
-### Verificação
+### Verificaçêo
 
-- comparação de saída com objetivos
-- geração de relatórios de validação
+- comparaçêo de saída com objetivos
+- geraçêo de relatórios de validaçêo
 - apoio ao UAT
 
 ### Utilitários
 
 - leitura/escrita segura de arquivos
 - parsing de argumentos
-- normalização de paths
+- normalizaçêo de paths
 
 ## Boas práticas para autores de agentes
 

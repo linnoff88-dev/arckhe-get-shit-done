@@ -1,7 +1,7 @@
 # Referência de Comandos do GSD
 
 Este documento descreve os comandos principais do GSD em Português.  
-Para detalhes completos de flags avançadas e mudanças recentes, consulte também a [versão em inglês](../COMMANDS.md).
+Para detalhes completos de flags avançadas e mudanças recentes, consulte também a [versêo em inglês](../COMMANDS.md).
 
 ---
 
@@ -9,28 +9,28 @@ Para detalhes completos de flags avançadas e mudanças recentes, consulte tamb�
 
 | Comando | Finalidade | Quando usar |
 |---------|------------|-------------|
-| `/gsd:new-project` | Inicialização completa: perguntas, pesquisa, requisitos e roadmap | Início de projeto |
-| `/gsd:discuss-phase [N]` | Captura decisões de implementação | Antes do planejamento |
+| `/gsd:new-project` | Inicializaçêo completa: perguntas, pesquisa, requisitos e roadmap | Início de projeto |
+| `/gsd:discuss-phase [N]` | Captura decisões de implementaçêo | Antes do planejamento |
 | `/gsd:ui-phase [N]` | Gera contrato de UI (`UI-SPEC.md`) | Fases com frontend |
-| `/gsd:plan-phase [N]` | Pesquisa + planejamento + verificação | Antes de executar uma fase |
+| `/gsd:plan-phase [N]` | Pesquisa + planejamento + verificaçêo | Antes de executar uma fase |
 | `/gsd:execute-phase <N>` | Executa planos em ondas paralelas | Após planejamento aprovado |
-| `/gsd:verify-work [N]` | UAT manual com diagnóstico automático | Após execução |
+| `/gsd:verify-work [N]` | UAT manual com diagnóstico automático | Após execuçêo |
 | `/gsd:ship [N]` | Cria PR da fase validada | Ao concluir a fase |
 | `/gsd:next` | Detecta e executa o próximo passo lógico | Qualquer momento |
 | `/gsd:fast <texto>` | Tarefa curta sem planejamento completo | Ajustes triviais |
 
-## Navegação e Sessão
+## Navegaçêo e Sessêo
 
 | Comando | Finalidade |
 |---------|------------|
 | `/gsd:progress` | Mostra status atual e próximos passos |
-| `/gsd:resume-work` | Retoma contexto da sessão anterior |
+| `/gsd:resume-work` | Retoma contexto da sessêo anterior |
 | `/gsd:pause-work` | Salva handoff estruturado |
-| `/gsd:session-report` | Gera resumo da sessão |
+| `/gsd:session-report` | Gera resumo da sessêo |
 | `/gsd:help` | Lista comandos e uso |
 | `/gsd:update` | Atualiza o GSD |
 
-## Gestão de Fases
+## Gestêo de Fases
 
 | Comando | Finalidade |
 |---------|------------|
@@ -48,7 +48,7 @@ Para detalhes completos de flags avançadas e mudanças recentes, consulte tamb�
 | `/gsd:quick` | Tarefas ad-hoc com garantias do GSD |
 | `/gsd:debug [desc]` | Debug sistemático com estado persistente |
 | `/gsd:forensics` | Diagnóstico de falhas no workflow |
-| `/gsd:settings` | Configuração de agentes, perfil e toggles |
+| `/gsd:settings` | Configuraçêo de agentes, perfil e toggles |
 | `/gsd:set-profile <perfil>` | Troca rápida de perfil de modelo |
 
 ## Qualidade de Código
@@ -57,7 +57,7 @@ Para detalhes completos de flags avançadas e mudanças recentes, consulte tamb�
 |---------|------------|
 | `/gsd:review` | Peer review com múltiplas IAs |
 | `/gsd:pr-branch` | Cria branch limpa sem commits de planejamento |
-| `/gsd:audit-uat` | Audita dívida de validação/UAT |
+| `/gsd:audit-uat` | Audita dívida de validaçêo/UAT |
 
 ## Backlog e Threads
 

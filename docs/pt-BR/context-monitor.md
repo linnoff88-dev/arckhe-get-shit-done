@@ -1,15 +1,15 @@
 # Monitor de Contexto
 
-O monitor de contexto ajuda a evitar degradação de qualidade em sessões longas, alertando sobre uso excessivo da janela de contexto.
+O monitor de contexto ajuda a evitar degradaçêo de qualidade em sessões longas, alertando sobre uso excessivo da janela de contexto.
 
-Para detalhes completos de implementação, veja [context-monitor.md em inglês](../context-monitor.md).
+Para detalhes completos de implementaçêo, veja [context-monitor.md em inglês](../context-monitor.md).
 
 ---
 
 ## Objetivos
 
-- identificar quando a sessão principal está saturando
-- recomendar ações de recuperação (`/clear`, `/gsd:resume-work`, `/gsd:progress`)
+- identificar quando a sessêo principal está saturando
+- recomendar ações de recuperaçêo (`/clear`, `/gsd:resume-work`, `/gsd:progress`)
 - manter previsibilidade durante ciclos longos de desenvolvimento
 
 ## Como funciona
@@ -25,7 +25,7 @@ Para detalhes completos de implementação, veja [context-monitor.md em inglês]
 - Execute tarefas pesadas em subagentes
 - Mantenha o estado em `.planning/` como fonte de verdade
 
-## Recuperação quando há degradação
+## Recuperaçêo quando há degradaçêo
 
 ```bash
 /clear
@@ -37,4 +37,4 @@ Para detalhes completos de implementação, veja [context-monitor.md em inglês]
 ---
 
 > [!TIP]
-> O monitor não substitui boas práticas de escopo. Planos pequenos e verificáveis continuam sendo o principal fator de qualidade.
+> O monitor nêo substitui boas práticas de escopo. Planos pequenos e verificáveis continuam sendo o principal fator de qualidade.

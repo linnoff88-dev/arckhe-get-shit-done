@@ -16,7 +16,7 @@
 </div>
 
 
-**English** Â· [PortuguÃªs](README.pt-BR.md) Â· [ç®€ä½“ä¸­æ–‡](README.zh-CN.md) Â· [æ—¥æœ¬èªž](README.ja-JP.md) Â· [í•œêµ­ì–´](README.ko-KR.md)
+**English** Â· [Português](README.pt-BR.md) Â· [ç®€ä½“ä¸­æ–‡](README.zh-CN.md) Â· [æ—¥æœ¬èªž](README.ja-JP.md) Â· [í•œêµ­ì–´](README.ko-KR.md)
 
 **A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code, OpenCode, Gemini CLI, Kilo, Codex, Copilot, Cursor, Windsurf, Antigravity, and Augment.**
 
@@ -73,7 +73,7 @@ The system gives Claude everything it needs to do the work *and* verify it. I tr
 
 That's what this is. No enterprise roleplay bullshit. Just an incredibly effective system for building cool stuff consistently using Claude Code.
 
-â€” **TÃ‚CHES**
+â€” **Tê‚CHES**
 
 ---
 
@@ -660,7 +660,7 @@ GSD stores project settings in `.planning/config.json`. Configure during `/gsd:n
 | Setting | Options | Default | What it controls |
 |---------|---------|---------|------------------|
 | `mode` | `yolo`, `interactive` | `interactive` | Auto-approve vs confirm at each step |
-| `granularity` | `coarse`, `standard`, `fine` | `standard` | Phase granularity â€” how finely scope is sliced (phases Ã— plans) |
+| `granularity` | `coarse`, `standard`, `fine` | `standard` | Phase granularity â€” how finely scope is sliced (phases ê— plans) |
 | `project_code` | string | `""` | Prefix phase directories with a project code |
 
 ### Model Profiles

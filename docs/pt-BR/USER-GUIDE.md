@@ -1,6 +1,6 @@
 # Guia do Usuário do GSD
 
-Referência detalhada de workflows, troubleshooting e configuração. Para setup rápido, veja o [README](../../README.pt-BR.md).
+Referência detalhada de workflows, troubleshooting e configuraçêo. Para setup rápido, veja o [README](../../README.pt-BR.md).
 
 ---
 
@@ -12,10 +12,10 @@ Referência detalhada de workflows, troubleshooting e configuração. Para setup
 - [Workstreams](#workstreams)
 - [Segurança](#segurança)
 - [Referência de comandos](#referência-de-comandos)
-- [Configuração](#configuração)
+- [Configuraçêo](#configuraçêo)
 - [Exemplos de uso](#exemplos-de-uso)
 - [Troubleshooting](#troubleshooting)
-- [Recuperação rápida](#recuperação-rápida)
+- [Recuperaçêo rápida](#recuperaçêo-rápida)
 
 ---
 
@@ -23,10 +23,10 @@ Referência detalhada de workflows, troubleshooting e configuração. Para setup
 
 Fluxo recomendado por fase:
 
-1. `/gsd:discuss-phase [N]` — trava preferências de implementação
+1. `/gsd:discuss-phase [N]` — trava preferências de implementaçêo
 2. `/gsd:ui-phase [N]` — contrato visual para fases frontend
-3. `/gsd:plan-phase [N]` — pesquisa + plano + validação
-4. `/gsd:execute-phase [N]` — execução em ondas paralelas
+3. `/gsd:plan-phase [N]` — pesquisa + plano + validaçêo
+4. `/gsd:execute-phase [N]` — execuçêo em ondas paralelas
 5. `/gsd:verify-work [N]` — UAT manual com diagnóstico
 6. `/gsd:ship [N]` — cria PR (opcional)
 
@@ -44,7 +44,7 @@ Para seguir automaticamente o próximo passo:
 
 ### Nyquist Validation
 
-Durante `plan-phase`, o GSD pode mapear requisitos para comandos de teste automáticos antes da implementação. Isso gera `{phase}-VALIDATION.md` e aumenta a confiabilidade de verificação pós-execução.
+Durante `plan-phase`, o GSD pode mapear requisitos para comandos de teste automáticos antes da implementaçêo. Isso gera `{phase}-VALIDATION.md` e aumenta a confiabilidade de verificaçêo pós-execuçêo.
 
 Desativar:
 
@@ -56,7 +56,7 @@ Desativar:
 }
 ```
 
-### Modo de discussão por suposições
+### Modo de discussêo por suposições
 
 Com `workflow.discuss_mode: "assumptions"`, o GSD analisa o código antes de perguntar, apresenta suposições estruturadas e pede apenas correções.
 
@@ -66,7 +66,7 @@ Com `workflow.discuss_mode: "assumptions"`, o GSD analisa o código antes de per
 
 ### Comandos
 
-| Comando | Descrição |
+| Comando | Descriçêo |
 |---------|-----------|
 | `/gsd:ui-phase [N]` | Gera contrato de design `UI-SPEC.md` para a fase |
 | `/gsd:ui-review [N]` | Auditoria visual retroativa em 6 pilares |
@@ -74,11 +74,11 @@ Com `workflow.discuss_mode: "assumptions"`, o GSD analisa o código antes de per
 ### Quando usar
 
 - Rode `/gsd:ui-phase` depois de `/gsd:discuss-phase` e antes de `/gsd:plan-phase`.
-- Rode `/gsd:ui-review` após execução/validação para avaliar qualidade visual e consistência.
+- Rode `/gsd:ui-review` após execuçêo/validaçêo para avaliar qualidade visual e consistência.
 
 ### Configurações relacionadas
 
-| Setting | Padrão | O que controla |
+| Setting | Padrêo | O que controla |
 |---------|--------|----------------|
 | `workflow.ui_phase` | `true` | Gera contratos de UI para fases frontend |
 | `workflow.ui_safety_gate` | `true` | Ativa gate de segurança para componentes de registry |
@@ -89,7 +89,7 @@ Com `workflow.discuss_mode: "assumptions"`, o GSD analisa o código antes de per
 
 ### Backlog (999.x)
 
-Ideias fora da sequência ativa vão para backlog:
+Ideias fora da sequência ativa vêo para backlog:
 
 ```bash
 /gsd:add-backlog "Camada GraphQL"
@@ -104,15 +104,15 @@ Promover/revisar:
 
 ### Seeds
 
-Seeds guardam ideias futuras com condição de gatilho:
+Seeds guardam ideias futuras com condiçêo de gatilho:
 
 ```bash
-/gsd:plant-seed "Adicionar colaboração real-time quando infra de WebSocket estiver pronta"
+/gsd:plant-seed "Adicionar colaboraçêo real-time quando infra de WebSocket estiver pronta"
 ```
 
 ### Threads persistentes
 
-Threads são contexto leve entre sessões:
+Threads sêo contexto leve entre sessões:
 
 ```bash
 /gsd:thread
@@ -124,9 +124,9 @@ Threads são contexto leve entre sessões:
 
 ## Workstreams
 
-Workstreams permitem trabalho paralelo sem colisão de estado de planejamento.
+Workstreams permitem trabalho paralelo sem colisêo de estado de planejamento.
 
-| Comando | Função |
+| Comando | Funçêo |
 |---------|--------|
 | `/gsd:workstreams create <name>` | Cria workstream isolado |
 | `/gsd:workstreams switch <name>` | Troca workstream ativo |
@@ -141,10 +141,10 @@ Workstreams permitem trabalho paralelo sem colisão de estado de planejamento.
 
 O GSD aplica defesa em profundidade:
 
-- prevenção de path traversal em entradas de arquivo
-- detecção de prompt injection em texto do usuário
-- hooks de proteção para escrita em `.planning/`
-- scanner CI para padrões de injeção em agentes/workflows/comandos
+- prevençêo de path traversal em entradas de arquivo
+- detecçêo de prompt injection em texto do usuário
+- hooks de proteçêo para escrita em `.planning/`
+- scanner CI para padrões de injeçêo em agentes/workflows/comandos
 
 Para arquivos sensíveis, use deny list no Claude Code.
 
@@ -164,14 +164,14 @@ Para arquivos sensíveis, use deny list no Claude Code.
 | `/gsd:ship [N]` | Gerar PR da fase |
 | `/gsd:next` | Próximo passo automático |
 
-### Gestão e utilidades
+### Gestêo e utilidades
 
 | Comando | Quando usar |
 |---------|-------------|
 | `/gsd:progress` | Ver status atual |
-| `/gsd:resume-work` | Retomar sessão |
+| `/gsd:resume-work` | Retomar sessêo |
 | `/gsd:pause-work` | Pausar com handoff |
-| `/gsd:session-report` | Resumo da sessão |
+| `/gsd:session-report` | Resumo da sessêo |
 | `/gsd:quick` | Tarefa ad-hoc com garantias GSD |
 | `/gsd:debug [desc]` | Debug sistemático |
 | `/gsd:forensics` | Diagnóstico de workflow quebrado |
@@ -182,13 +182,13 @@ Para lista completa e flags avançadas, consulte [Command Reference](../COMMANDS
 
 ---
 
-## Configuração
+## Configuraçêo
 
-Arquivo de configuração: `.planning/config.json`
+Arquivo de configuraçêo: `.planning/config.json`
 
 ### Núcleo
 
-| Setting | Opções | Padrão |
+| Setting | Opções | Padrêo |
 |---------|--------|--------|
 | `mode` | `interactive`, `yolo` | `interactive` |
 | `granularity` | `coarse`, `standard`, `fine` | `standard` |
@@ -196,7 +196,7 @@ Arquivo de configuração: `.planning/config.json`
 
 ### Workflow
 
-| Setting | Padrão |
+| Setting | Padrêo |
 |---------|--------|
 | `workflow.research` | `true` |
 | `workflow.plan_check` | `true` |
@@ -210,9 +210,9 @@ Arquivo de configuração: `.planning/config.json`
 | Perfil | Uso recomendado |
 |--------|------------------|
 | `quality` | trabalho crítico, maior qualidade |
-| `balanced` | padrão recomendado |
+| `balanced` | padrêo recomendado |
 | `budget` | reduzir custo de tokens |
-| `inherit` | seguir modelo da sessão/runtime |
+| `inherit` | seguir modelo da sessêo/runtime |
 
 Detalhes completos: [Configuration Reference](../CONFIGURATION.md).
 
@@ -240,14 +240,14 @@ claude --dangerously-skip-permissions
 /gsd:new-project
 ```
 
-### Correção rápida
+### Correçêo rápida
 
 ```bash
 /gsd:quick
-> "Corrigir botão de login no mobile Safari"
+> "Corrigir botêo de login no mobile Safari"
 ```
 
-### Preparação para release
+### Preparaçêo para release
 
 ```bash
 /gsd:audit-milestone
@@ -263,7 +263,7 @@ claude --dangerously-skip-permissions
 
 `.planning/PROJECT.md` já existe. Apague `.planning/` se quiser reiniciar do zero.
 
-### Sessão longa degradando contexto
+### Sessêo longa degradando contexto
 
 Use `/clear` entre etapas grandes e retome com `/gsd:resume-work` ou `/gsd:progress`.
 
@@ -271,7 +271,7 @@ Use `/clear` entre etapas grandes e retome com `/gsd:resume-work` ou `/gsd:progr
 
 Rode `/gsd:discuss-phase [N]` antes do plano e valide suposições com `/gsd:list-phase-assumptions [N]`.
 
-### Execução falhou ou saiu com stubs
+### Execuçêo falhou ou saiu com stubs
 
 Replaneje com escopo menor (tarefas menores por plano).
 
@@ -283,23 +283,23 @@ Use perfil budget:
 /gsd:set-profile budget
 ```
 
-### Runtime não-Claude (Codex/OpenCode/Gemini/Kilo)
+### Runtime nêo-Claude (Codex/OpenCode/Gemini/Kilo)
 
-Use `resolve_model_ids: "omit"` para deixar o runtime resolver modelos padrão.
+Use `resolve_model_ids: "omit"` para deixar o runtime resolver modelos padrêo.
 
 ---
 
-## Recuperação rápida
+## Recuperaçêo rápida
 
-| Problema | Solução |
+| Problema | Soluçêo |
 |---------|---------|
 | Perdeu contexto | `/gsd:resume-work` ou `/gsd:progress` |
 | Fase deu errado | `git revert` + replanejar |
 | Precisa alterar escopo | `/gsd:add-phase`, `/gsd:insert-phase`, `/gsd:remove-phase` |
 | Bug em workflow | `/gsd:forensics` |
-| Correção pontual | `/gsd:quick` |
+| Correçêo pontual | `/gsd:quick` |
 | Custo alto | `/gsd:set-profile budget` |
-| Não sabe próximo passo | `/gsd:next` |
+| Nêo sabe próximo passo | `/gsd:next` |
 
 ---
 
@@ -332,4 +332,4 @@ Use `resolve_model_ids: "omit"` para deixar o runtime resolver modelos padrão.
 ```
 
 > [!NOTE]
-> Esta é a versão pt-BR do guia para uso diário. Para detalhes técnicos exatos e cobertura completa de parâmetros avançados, consulte também o [guia original em inglês](../USER-GUIDE.md).
+> Esta é a versêo pt-BR do guia para uso diário. Para detalhes técnicos exatos e cobertura completa de parâmetros avançados, consulte também o [guia original em inglês](../USER-GUIDE.md).
